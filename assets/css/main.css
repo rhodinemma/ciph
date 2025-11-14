@@ -1199,6 +1199,14 @@ section,
   font-size: 1rem;
 }
 
+/* Reusable surface card used across pages for matching site card background */
+.surface-card {
+  background-color: var(--surface-color);
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+}
+
 .about .testimonial-section .testimonial-item p {
   font-style: italic;
   margin-bottom: 0;
@@ -3774,5 +3782,5 @@ section,
 # Starter Section Section
 --------------------------------------------------------------*/
 .starter-section {
-  /* Add your styles here */
+  padding: 60px 0;
 }
