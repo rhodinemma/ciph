@@ -1,6 +1,6 @@
 /**
-* Template Name: Synced Creative Agency
-* Template URL: https://bootstrapmade.com/Synced Creative Agency-bootstrap-agency-template/
+* Template Name: Ciph Creative Agency
+* Template URL: https://bootstrapmade.com/Ciph Creative Agency-bootstrap-agency-template/
 * Updated: Jun 06 2025 with Bootstrap v5.3.6
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
