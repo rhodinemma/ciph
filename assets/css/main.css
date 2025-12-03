@@ -1266,6 +1266,85 @@ section,
   padding: 1rem;
 }
 
+/* Make Bootstrap card components theme-aware so they follow site variables */
+.card,
+.card-body {
+  background-color: var(--surface-color) !important;
+  color: var(--default-color) !important;
+  border-color: color-mix(in srgb, var(--default-color), transparent 90%) !important;
+}
+
+.card .card-body {
+  background: transparent;
+}
+
+/* Ensure lists and headings inside cards look correct in dark mode */
+.card h1, .card h2, .card h3, .card h4, .card h5, .card h6 {
+  color: var(--heading-color) !important;
+}
+
+.card p, .card li {
+  color: var(--default-color) !important;
+}
+
+/*--------------------------------------------------------------
+# Footer - make theme-aware using site variables
+--------------------------------------------------------------*/
+.footer {
+  color: var(--default-color) !important;
+  background-color: var(--background-color) !important;
+}
+
+.footer .footer-top {
+  padding-top: 50px;
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  background: transparent;
+}
+
+.footer .footer-about .logo span {
+  color: var(--heading-color) !important;
+}
+
+.footer .social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
+  font-size: 16px;
+  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  margin-right: 10px;
+  transition: 0.3s;
+  background: transparent;
+}
+
+.footer .social-links a:hover {
+  color: var(--accent-color) !important;
+  border-color: var(--accent-color) !important;
+}
+
+.footer .footer-links ul a {
+  color: color-mix(in srgb, var(--default-color), transparent 20%) !important;
+}
+
+.footer .footer-links ul a:hover {
+  color: var(--accent-color) !important;
+}
+
+.footer .footer-contact p,
+.footer .footer-about p {
+  color: var(--default-color) !important;
+}
+
+.footer .copyright {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: color-mix(in srgb, var(--default-color), transparent 95%) !important;
+  color: color-mix(in srgb, var(--default-color), transparent 40%) !important;
+}
+
 .about .testimonial-section .testimonial-item p {
   font-style: italic;
   margin-bottom: 0;
