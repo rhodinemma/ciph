@@ -260,6 +260,11 @@
         localStorage.setItem(storageKey, current);
       } catch (e) {}
       applyTheme(current);
+      try {
+        if (window.AOS && typeof AOS.refresh === 'function') {
+          AOS.refresh();
+        }
+      } catch (e) {}
     }
 
     toggles.forEach(toggle => {
